@@ -1,0 +1,28 @@
+.nav-action-container {
+  margin: 20px auto;
+  width: 90%;
+}
+.main-nav {
+  padding: 10px 5%;
+  width: 100%;
+  background-color: transparent !important;
+}
+.contact-button{
+  margin-right: 9px;
+  float:right;
+}
+.contact-grid {
+  display:grid;
+  margin: 20px auto;
+  width: 90%;
+  height: 80vh;
+  max-height: 80vh;
+  overflow: auto;
+}
+.edit-mode {
+  background-color: #ffe503 !important;
+}
+
+.brand {
+  height: 65px;
+}

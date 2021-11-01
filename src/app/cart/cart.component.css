@@ -1,0 +1,43 @@
+
+.main-nav {
+  margin:20px auto;
+  background-color: transparent !important;
+  padding:0 5%;
+}
+.nav-action-container {
+  padding:0 5%;
+}
+.contact-grid {
+  display: grid;
+  margin: 20px auto;
+  width: 90%;
+  height: 80vh;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.nav-action-container>li>button {
+  margin-right: 9px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+}
+.pull-right {
+  float: right;
+}
+.cover {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+}

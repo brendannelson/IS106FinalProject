@@ -1,0 +1,18 @@
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  align-items: center;
+}
+
+.login-form {
+  padding: 25px;
+  background-color: #FFF;
+}
+.login-logo > img {
+  object-fit: cover;
+  width: calc(100% + 50px);
+  display: block;
+  height: 200px;
+  margin: -25px -25px 25px -25px;
+}

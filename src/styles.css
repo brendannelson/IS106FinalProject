@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.box-shadow {
+  display: block;
+  -webkit-box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+}
+
+/* material override */
+.mat-toolbar.mat-primary {
+  background: #343434;
+  color: #fff;
+}
+
+.mat-raised-button.mat-primary {
+  background-color: #343434;
+  color: #FFF;
+}

@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+      <a class="navbar-brand" href="#">
+        <img class="brand" src="../../assets/logo.jpeg" alt="brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['invoice']">Invoice <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['cart']">Cart <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" (click)="about()">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>

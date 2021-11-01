@@ -1,0 +1,6 @@
+.table-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  padding:5%;
+  width: 100%;
+}

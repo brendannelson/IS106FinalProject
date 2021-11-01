@@ -1,0 +1,9 @@
+.alert-container {
+  width:auto;
+  position: absolute;
+  max-width: 500px;
+  min-width: 500px;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+}
