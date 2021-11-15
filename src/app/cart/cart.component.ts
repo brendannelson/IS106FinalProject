@@ -8,6 +8,7 @@ export interface Bikes {
   id: number;
   image: string;
   description: string;
+  OZ: number;
   price: number;
   quantity: number;
 }
@@ -57,6 +58,7 @@ export class CartComponent implements OnInit {
       "id": 1,
       "image": "../../assets/bike1.jpeg",
       "description": "Bike Model 1",
+      "OZ": 12,
       "price": 5000,
       "quantity": 1
     });
@@ -67,6 +69,7 @@ export class CartComponent implements OnInit {
       "id": 2,
       "image": "../../assets/bike2.jpeg",
       "description": "Bike Model 2",
+      "OZ": 16,
       "price": 4000,
       "quantity": 1
     });
@@ -77,6 +80,7 @@ export class CartComponent implements OnInit {
       "id": 3,
       "image": "../../assets/bike3.jpeg",
       "description": "Bike Model 3",
+      "OZ": 20,
       "price": 3000,
       "quantity": 1
     });
