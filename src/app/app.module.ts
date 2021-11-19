@@ -14,6 +14,7 @@ import { MaterialDesignModule } from '../material-design/material-design.module'
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
+import { LaunchPageComponent } from './launch-page/launch-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CartComponent } from './cart/cart.component';
     LoginComponent,
     MainNavComponent,
     HomeComponent,
-    CartComponent
+    CartComponent,
+    LaunchPageComponent
   ],
   imports: [
     BrowserModule,

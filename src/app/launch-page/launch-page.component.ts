@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
 
 
-
 export interface Bikes {
   id: number;
   image: string;
@@ -15,11 +14,11 @@ export interface Bikes {
   quantity: number;
 }
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-launch-page',
+  templateUrl: './launch-page.component.html',
+  styleUrls: ['./launch-page.component.css']
 })
-export class CartComponent implements OnInit {
+export class LaunchPageComponent implements OnInit {
 
   bikes: Array<Bikes> = [];
   name = '';
@@ -67,6 +66,8 @@ export class CartComponent implements OnInit {
       "price": 5000,
       "quantity": 1
     });
+    localStorage.setItem('inventory', JSON.stringify(this.bikes))
+    this.toastService.showToast('success', 2000, "Successfully saved")
   }
 
   addBike2() {
@@ -78,6 +79,8 @@ export class CartComponent implements OnInit {
       "price": 4000,
       "quantity": 1
     });
+    localStorage.setItem('inventory', JSON.stringify(this.bikes))
+    this.toastService.showToast('success', 2000, "Successfully saved")
   }
 
   addBike3() {
@@ -89,6 +92,8 @@ export class CartComponent implements OnInit {
       "price": 3000,
       "quantity": 1
     });
+    localStorage.setItem('inventory', JSON.stringify(this.bikes))
+    this.toastService.showToast('success', 2000, "Successfully saved")
   }
 
   save() {
@@ -136,3 +141,4 @@ export class CartComponent implements OnInit {
   }
 
 }
+
