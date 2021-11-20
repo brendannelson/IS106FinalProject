@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.toastService.showToast('warning', 2000, 'Login failed! Please specify user and password!');
     } else if (user.username === defaultUser.username && user.password === defaultUser.password) {
       this.localStorageService.saveItemsToLocalStorage(user);
-      this.router.navigate(['cart', user]);
+      this.router.navigate(['launch-page', user]);
     } else {
       this.toastService.showToast('warning', 2000, 'Invaid credentials');
     }

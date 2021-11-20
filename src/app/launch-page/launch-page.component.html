@@ -1,61 +1,167 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
-  </div>
+  </div> -->
 </nav>
 
 <ul class="nav justify-content-end nav-action-container">
-  <li class="nav-item">
-    
-  </li>
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)='addBike2()'>Add Bike Model 2</button>
-  </li>
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)='addBike3()'>Add Bike Model 4</button>
-    </li>
-  <li class="nav-item">
-    <button mat-raised-button color="primary" (click)='checkout()'>Checkout</button>
+  <li class="nav-item active">
+    <a mat-raised-button color="bg-secondary" class="nav-link" [routerLink]="['../cart']">Cart {{ bikes.length }}</a>
   </li>
 </ul>
 
 <div class="contact-grid">
   <div class="gallery-grid">
-    <mat-card class="example-card" *ngFor="let bike of bikes; let i = index">
+    <mat-card class="example-card cell-1">
       <mat-card-content>
-        <img class="cover" [src]="bike.image" alt="bike">
+        <img class="cover1">
         <p>
           <label for="id">ID:</label>
-          <input [(ngModel)]='bike.id' disabled type="text" class="form-control" placeholder="ID" aria-label="id">
-        </p>  
+          <input disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+        </p>
         <p>
           <label for="description">Description:</label>
-          <input [(ngModel)]='bike.description' type="text" class="form-control" placeholder="Description" aria-label="desc"
+          <input type="text" class="form-control" placeholder="Description" aria-label="desc"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input [(ngModel)]='bike.OZ' type="text" class="form-control" placeholder="OZ" aria-label="OZ"
-            aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="OZ" aria-label="OZ" aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
-          <input [(ngModel)]='bike.price' type="text" class="form-control" placeholder="Price" aria-label="price"
+          <input type="text" class="form-control" placeholder="Price" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="quantity">Quantity</label>
-          <input [(ngModel)]='bike.quantity' type="text" class="form-control" placeholder="Quantity" aria-label="qty"
+          <input type="text" class="form-control" placeholder="Quantity" aria-label="qty"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-group center">
+          <button mat-raised-button color="primary" (click)='addBike1()'>Add Bike Model 1</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-content>
+        <img class="cover">
+        <p>
+          <label for="id">ID:</label>
+          <input disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input type="text" class="form-control" placeholder="Description" aria-label="desc"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input type="text" class="form-control" placeholder="OZ" aria-label="OZ" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input type="text" class="form-control" placeholder="Price" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <button mat-raised-button color="primary" (click)='addBike1()'>Add Bike Model 1</button>
-          <button mat-raised-button color="primary" class="pull-right" (click)='save()'>Save For Later</button>
-          <button mat-raised-button color="warn" (click)='remove()'>Remove From Cart</button>
+          <button mat-raised-button color="primary" (click)='addBike2()'>Add Bike Model 2</button>
         </div>
       </mat-card-actions>
     </mat-card>
+
+    <mat-card >
+      <mat-card-content>
+        <img class="cover">
+        <p>
+          <label for="id">ID:</label>
+          <input disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input type="text" class="form-control" placeholder="Description" aria-label="desc"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input type="text" class="form-control" placeholder="OZ" aria-label="OZ" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input type="text" class="form-control" placeholder="Price" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-group pull-right">
+          <button mat-raised-button color="primary" (click)='addBike3()'>Add Bike Model 3</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card >
+      <mat-card-content>
+        <img class="cover">
+        <p>
+          <label for="id">ID:</label>
+          <input disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input type="text" class="form-control" placeholder="Description" aria-label="desc"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input type="text" class="form-control" placeholder="OZ" aria-label="OZ" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input type="text" class="form-control" placeholder="Price" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-group pull-right">
+          <button mat-raised-button color="primary" (click)='addBike2()'>Add Bike Model 2</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-content>
+        <img class="cover">
+        <p>
+          <label for="id">ID:</label>
+          <input disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input type="text" class="form-control" placeholder="Description" aria-label="desc"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input type="text" class="form-control" placeholder="OZ" aria-label="OZ" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input type="text" class="form-control" placeholder="Price" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="btn-group pull-right">
+          <button mat-raised-button color="primary" (click)='addBike3()'>Add Bike Model 3</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+    
+
   </div>
 </div>

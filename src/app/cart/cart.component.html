@@ -3,7 +3,11 @@
     <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
   </div>
 </nav>
-
+<ul class="nav justify-content-end nav-action-container">
+  <li class="nav-item">
+    <button mat-raised-button color="primary" (click)='checkout()'>Checkout</button>
+  </li>
+</ul>
 
 <div class="contact-grid">
   <div class="gallery-grid">
@@ -37,7 +41,7 @@
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <button mat-raised-button color="primary" class="pull-right" (click)='save()'>Save For Later</button>
+          <!-- <button mat-raised-button color="primary" class="pull-right" (click)='save()'>Save For Later</button> -->
           <button mat-raised-button color="warn" (click)='remove()'>Remove From Cart</button>
         </div>
       </mat-card-actions>
