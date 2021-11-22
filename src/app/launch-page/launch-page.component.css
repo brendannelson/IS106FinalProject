@@ -16,6 +16,10 @@
     overflow: auto;
   }
   
+  .center{
+    text-align: center;
+    width: 100%;
+  }
   
   .gallery-grid {
     display: grid;
@@ -42,7 +46,7 @@
   }
 
   .cover1 {
-    height: 600px;
+    height: 800px;
     width: 100%;
     object-fit: contain;
   }
@@ -58,5 +62,9 @@
     grid-column: 1/2; 
   }
   
+  .cart {
+    font-size: 24px;
+    padding-right: 10%;
+  }
 
   

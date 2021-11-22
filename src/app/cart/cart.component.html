@@ -1,50 +1,95 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav overflow">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
+    <input [(ngModel)]='names' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)"
+      aria-label="Search" name="search">
   </div>
 </nav>
-<ul class="nav justify-content-end nav-action-container">
+<!-- <ul class="nav justify-content-end nav-action-container">
   <li class="nav-item">
     <button mat-raised-button color="primary" (click)='checkout()'>Checkout</button>
   </li>
-</ul>
+</ul> -->
 
-<div class="contact-grid">
+
+
+
+
+<div class="CartContainer">
+  <h3 class="Heading2">Shopping Cart</h3>
+  <div class="Header">
+    <h3 class="Heading"></h3>
+    <h3 class="Heading">Name</h3>
+    <h3 class="Heading">Quantity</h3>
+    <h3 class="Heading">Price</h3>
+  </div>
+  <hr class="line">
+  <div class="Cart-Items" *ngFor="let item of items; let i = index">
+    <div class="image-box">
+      <img [src]="item.image" alt="item">
+      <hr class="line2">
+    </div>
+    <div class="about">
+      <h1 class="title">{{item.name}}</h1>
+      <h3 class="subtitle">OZ: {{item.OZ}}</h3>
+    </div>
+    <div class="counter">
+      <input [(ngModel)]='item.quantity' type="text" class="form-control" placeholder="Quantity" aria-label="qty"
+        aria-describedby="basic-addon1">
+    </div>
+    <div class="prices">
+      <div class="amount">${{item.price}}</div>
+      <button mat-raised-button color="warn" (click)='remove()'>Remove From Cart</button>
+    </div>
+  </div>
+  <h1 class="checkout">
+    <button class="button" (click)='checkout()'>Checkout</button>
+  </h1>
+</div>
+
+
+
+
+<!-- <div class="contact-grid">
   <div class="gallery-grid">
-    <mat-card class="example-card" *ngFor="let bike of bikes; let i = index">
+    <div class=”Header”>
+      <h3 class=”Heading”>Shopping Cart</h3>
+      <h5 class=”Action”>Remove all</h5>
+      </div>
+    <mat-card class="example-card" *ngFor="let item of items; let i = index">
       <mat-card-content>
-        <img class="cover" [src]="bike.image" alt="bike">
+        
+        <img class="cover" [src]="item.image" alt="item">
         <p>
           <label for="id">ID:</label>
-          <input [(ngModel)]='bike.id' disabled type="text" class="form-control" placeholder="ID" aria-label="id">
+          <input [(ngModel)]='item.id' disabled type="text" class="form-control" placeholder="ID" aria-label="id">
         </p>  
         <p>
           <label for="description">Description:</label>
-          <input [(ngModel)]='bike.description' type="text" class="form-control" placeholder="Description" aria-label="desc"
+          <input [(ngModel)]='item.description' type="text" class="form-control" placeholder="Description" aria-label="desc"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input [(ngModel)]='bike.OZ' type="text" class="form-control" placeholder="OZ" aria-label="OZ"
+          <input [(ngModel)]='item.OZ' type="text" class="form-control" placeholder="OZ" aria-label="OZ"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
-          <input [(ngModel)]='bike.price' type="text" class="form-control" placeholder="Price" aria-label="price"
+          <input [(ngModel)]='item.price' type="text" class="form-control" placeholder="Price" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="quantity">Quantity</label>
-          <input [(ngModel)]='bike.quantity' type="text" class="form-control" placeholder="Quantity" aria-label="qty"
+          <input [(ngModel)]='item.quantity' type="text" class="form-control" placeholder="Quantity" aria-label="qty"
             aria-describedby="basic-addon1">
         </p>
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <!-- <button mat-raised-button color="primary" class="pull-right" (click)='save()'>Save For Later</button> -->
+          <button mat-raised-button color="primary" class="pull-right" (click)='save()'>Save For Later</button>
           <button mat-raised-button color="warn" (click)='remove()'>Remove From Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
   </div>
-</div>
+</div> -->
