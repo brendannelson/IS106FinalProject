@@ -51,9 +51,9 @@ export class LaunchPageComponent implements OnInit {
 
   addItem1() {
     this.items.push({
-      "name": "bike1",
+      "name": "Item 1",
       "image": "../../assets/bike1.jpeg",
-      "description": "item Model 1",
+      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
       "OZ": 12,
       "price": 5000,
       "quantity": 1
@@ -64,9 +64,9 @@ export class LaunchPageComponent implements OnInit {
 
   addItem2() {
     this.items.push({
-      "name": "bike2",
+      "name": "Item 2",
       "image": "../../assets/bike2.jpeg",
-      "description": "item Model 2",
+      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
       "OZ": 16,
       "price": 4000,
       "quantity": 1
@@ -77,9 +77,9 @@ export class LaunchPageComponent implements OnInit {
 
   addItem3() {
     this.items.push({
-      "name": "bike3",
+      "name": "Item 3",
       "image": "../../assets/bike3.jpeg",
-      "description": "item Model 3",
+      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
       "OZ": 20,
       "price": 3000,
       "quantity": 1,

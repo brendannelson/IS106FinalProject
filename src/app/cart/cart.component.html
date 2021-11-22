@@ -15,12 +15,12 @@
 
 
 <div class="CartContainer">
-  <h3 class="Heading2">Shopping Cart</h3>
+  <h3 class="PageName">Shopping Cart</h3>
   <div class="Header">
-    <h3 class="Heading"></h3>
-    <h3 class="Heading">Name</h3>
-    <h3 class="Heading">Quantity</h3>
-    <h3 class="Heading">Price</h3>
+    <h3 class="Heading1">Name</h3>
+    <h3 class="Heading2">Description</h3>
+    <h3 class="Heading3">Quantity</h3>
+    <h3 class="Heading4">Price</h3>
   </div>
   <hr class="line">
   <div class="Cart-Items" *ngFor="let item of items; let i = index">
@@ -28,9 +28,13 @@
       <img [src]="item.image" alt="item">
       <hr class="line2">
     </div>
-    <div class="about">
+    <div class="about1">
       <h1 class="title">{{item.name}}</h1>
-      <h3 class="subtitle">OZ: {{item.OZ}}</h3>
+    </div>
+    <div class="about2">
+      <h3 class="subtitle">{{item.description}}
+        <h3 class="subtitle2">OZ: {{item.OZ}}</h3>
+      </h3>
     </div>
     <div class="counter">
       <input [(ngModel)]='item.quantity' type="text" class="form-control" placeholder="Quantity" aria-label="qty"

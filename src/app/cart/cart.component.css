@@ -80,14 +80,41 @@
 	align-items: center;
 }
 
-.Heading{
+.Heading1{
 	font-size: 20px;
 	font-family: 'Open Sans';
 	font-weight: 700;
 	color: #2F3841;
+	margin: 0 0 0 26%;
+
 }
 
 .Heading2{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+	margin: 0 0 0 14%;
+}
+
+.Heading3{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+	margin: 0 6% 0 12%;
+}
+
+.Heading4{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+	margin: 0 5% 0 0;
+}
+
+
+.PageName{
 	font-size: 30px;
 	font-family: 'Open Sans';
 	font-weight: 700;
@@ -117,9 +144,16 @@
 	width: 15%;
 	text-align: center;
 }
-.about{
+
+.about1{
 	height: 100%;
-	width: 24%;
+	width: 45%;
+	margin: 2% 0 0 10%;
+}
+
+.about2{
+	height: 100%;
+	margin: 5% 0 0 0;
 }
 .title{
 	padding-top: 10px;
@@ -128,13 +162,14 @@
 	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
+	
 }
 .subtitle{
-	line-height: 10px;
 	font-size: 18px;
 	font-family: 'Open Sans';
 	font-weight: 600;
 	color: #909090;
+
 }
 
 .subtitle2{
@@ -143,7 +178,8 @@
 	font-family: 'Open Sans';
 	font-weight: 600;
 	color: #909090;
-  position: absolute;
+	margin: 20px 0 0 0;
+
 }
 
 .counter{
@@ -151,6 +187,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 8% 3% 5%;
 }
 .btn{
 	width: 40px;
@@ -183,6 +220,7 @@
 	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
+	margin: 38% 30% 20% 0;
 }
 .save{
 	padding-top: 5px;
@@ -212,33 +250,11 @@ hr{
 }
 .checkout{
 	float: right;
-	margin-right: 5%;
+	margin-right: 20%;
+	margin: 0 5% 2% 0;
 	width: 28%;
 }
-.total{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-.Subtotal{
-	font-size: 22px;
-	font-family: 'Open Sans';
-	font-weight: 700;
-	color: #202020;
-}
-.items{
-	font-size: 16px;
-	font-family: 'Open Sans';
-	font-weight: 500;
-	color: #909090;
-	line-height: 10px;
-}
-.total-amount{
-	font-size: 36px;
-	font-family: 'Open Sans';
-	font-weight: 900;
-	color: #202020;
-}
+
 .button{
 	margin-top: 10px;
 	width: 100%;
