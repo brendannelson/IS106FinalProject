@@ -15,6 +15,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { LaunchPageComponent } from './launch-page/launch-page.component';
+import { SalesComponent } from './sales/sales.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LaunchPageComponent } from './launch-page/launch-page.component';
     MainNavComponent,
     HomeComponent,
     CartComponent,
-    LaunchPageComponent
+    LaunchPageComponent,
+    SalesComponent
   ],
   imports: [
     BrowserModule,
