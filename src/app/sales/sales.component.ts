@@ -158,41 +158,6 @@ export class SalesComponent implements OnInit {
     this.toastService.showToast('success', 2000, "Successfully saved")
   }
 
-  checkout() {
-    const total = this.calcualte();
-    if (this.names == '') {
-      this.toastService.showToast('danger', 2000, "Name must not be null");
-    } else if (this.names.indexOf(', ') === -1) {
-      this.toastService.showToast('danger', 2000, "Name must contain a comma and a space!")
-    } else {
-      this.router.navigate(['invoice', total]);
-    }
-    localStorage.setItem('calculated', JSON.stringify(total));
-  }
-
-  calcualte() {
-    let tax = 0;
-    let total = 0;
-    let subTotal = 0;
-    let names
-    let name1
-    let name2
-    let fullName
-    for (let i = 0; i < this.items.length; i++) {
-      subTotal += this.items[i].quantity * this.items[i].price
-      tax = subTotal * .15
-      total = subTotal + tax
-      names = this.names.replace(', ', ' ').split(' ')
-      name1 = names[0]
-      name2 = names[1]
-      fullName = name2 + ' ' + name1
-    } return {
-      names: fullName,
-      tax: tax,
-      subTotal: subTotal,
-      total: total,
-    }
-  }
 
 
 }

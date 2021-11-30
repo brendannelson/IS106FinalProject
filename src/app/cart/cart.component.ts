@@ -56,7 +56,7 @@ export class CartComponent implements OnInit {
   }
 
   checkout() {
-    const total = this.calcualte();
+    const total = this.calculate();
     if (this.names == '') {
       this.toastService.showToast('danger', 2000, "Name must not be null");
     } else if (this.names.indexOf(', ') === -1) {
@@ -68,7 +68,7 @@ export class CartComponent implements OnInit {
   }
 
 
-  calcualte() {
+  calculate() {
     let tax = 0;
     let total = 0;
     let subTotal = 0;
