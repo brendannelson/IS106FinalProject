@@ -158,6 +158,4 @@ export class SalesComponent implements OnInit {
     this.toastService.showToast('success', 2000, "Successfully saved")
   }
 
-
-
 }
