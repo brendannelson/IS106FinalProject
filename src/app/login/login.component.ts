@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(user: User) {
-    const defaultUser: User = { username: 'chue', password: 'chue123' };
+    const defaultUser: User = { username: 'project', password: '123' };
     if (user.username == '' && user.password == '') {
       this.toastService.showToast('warning', 2000, 'Login failed! Please specify user and password!');
     } else if (user.username === defaultUser.username && user.password === defaultUser.password) {

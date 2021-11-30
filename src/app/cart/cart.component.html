@@ -25,14 +25,14 @@
   <hr class="line">
   <div class="Cart-Items" *ngFor="let item of items; let i = index">
     <div class="image-box">
-      <img [src]="item.image" alt="item">
+      <img class="cover" [src]="item.image" alt="item">
       <hr class="line2">
     </div>
     <div class="about1">
       <h1 class="title">{{item.name}}</h1>
     </div>
     <div class="about2">
-      <h3 class="subtitle">{{item.description}}
+      <h3 class="subtitle" >{{item.description}}
         <h3 class="subtitle2">OZ: {{item.OZ}}</h3>
       </h3>
     </div>
@@ -42,7 +42,7 @@
     </div>
     <div class="prices">
       <div class="amount">${{item.price}}</div>
-      <button mat-raised-button color="warn" (click)='remove()'>Remove From Cart</button>
+      <button mat-raised-button color="warn" (click)='remove(i)'>Remove From Cart</button>
     </div>
   </div>
   <h1 class="checkout">

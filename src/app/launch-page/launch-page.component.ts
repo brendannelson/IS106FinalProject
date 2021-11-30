@@ -51,11 +51,11 @@ export class LaunchPageComponent implements OnInit {
 
   addItem1() {
     this.items.push({
-      "name": "Item 1",
-      "image": "../../assets/bike1.jpeg",
-      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-      "OZ": 12,
-      "price": 5000,
+      "name": "Studio Glass Water Bottle",
+      "image": "../../assets/1.png",
+      "description": "Drink directly from glass with ZULU Studio. Made of odor-free, stain-free, and clean tasting glass.",
+      "OZ": 28,
+      "price": 16.99,
       "quantity": 1
     });
     localStorage.setItem('inventory', JSON.stringify(this.items))
@@ -64,11 +64,11 @@ export class LaunchPageComponent implements OnInit {
 
   addItem2() {
     this.items.push({
-      "name": "Item 2",
-      "image": "../../assets/bike2.jpeg",
-      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-      "OZ": 16,
-      "price": 4000,
+      "name": "Porter Glass Water Bottle",
+      "image": "../../assets/2.jpg",
+      "description": "Upgrade your daily hydration with the Porter water bottle from W&P. Updated with a chic terrazzo design...",
+      "OZ": 20,
+      "price": 19.99,
       "quantity": 1
     });
     localStorage.setItem('inventory', JSON.stringify(this.items))
@@ -77,17 +77,43 @@ export class LaunchPageComponent implements OnInit {
 
   addItem3() {
     this.items.push({
-      "name": "Item 3",
-      "image": "../../assets/bike3.jpeg",
-      "description": "ILorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-      "OZ": 20,
-      "price": 3000,
+      "name": "Soma Glass Water Bottle",
+      "image": "../../assets/3.jpg",
+      "description": "Stay hydrated in style. Crafted from shatter-resistant glass, and sporting an easy-to-grip sleeve, you’ll...",
+      "OZ": 25,
+      "price": 35.00,
       "quantity": 1,
     });
     localStorage.setItem('inventory', JSON.stringify(this.items))
     this.toastService.showToast('success', 2000, "Successfully added to cart")
   }
 
+  addItem4() {
+    this.items.push({
+      "name": "Borosilicate Glass Water Bottle",
+      "image": "../../assets/4.jpg",
+      "description": "Our Faded glass bottles are BPA, BPS, PVC, Lead and Cadmium free. They won’t leach chemicals similar to plastic...",
+      "OZ": 18,
+      "price": 18.95,
+      "quantity": 1,
+    });
+    localStorage.setItem('inventory', JSON.stringify(this.items))
+    this.toastService.showToast('success', 2000, "Successfully added to cart")
+  }
+
+  addItem5() {
+    this.items.push({
+      "name": "Floriculture Glass Water Bottle",
+      "image": "../../assets/5.jpg",
+      "description": "Heat-resistant borosilicate glass water bottle. Includes stainless steel cap & fabric carrying strap. Hand wash...",
+      "OZ": 18.6,
+      "price": 15.00,
+      "quantity": 1,
+    });
+    localStorage.setItem('inventory', JSON.stringify(this.items))
+    this.toastService.showToast('success', 2000, "Successfully added to cart")
+  }
+  
   save() {
     localStorage.setItem('inventory', JSON.stringify(this.items))
     this.toastService.showToast('success', 2000, "Successfully saved")
@@ -114,9 +140,9 @@ export class LaunchPageComponent implements OnInit {
     let name2
     let fullName
     for (let i = 0; i < this.items.length; i++) {
-      total += this.items[i].quantity * this.items[i].price
-      tax = total * .15
-      subTotal = total - tax
+      subTotal += this.items[i].quantity * this.items[i].price
+      tax = subTotal * .15
+      total = subTotal + tax
       names = this.names.replace(', ', ' ').split(' ')
       name1 = names[0]
       name2 = names[1]

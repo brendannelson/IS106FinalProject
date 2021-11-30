@@ -37,9 +37,11 @@
   float: right;
 }
 .cover {
-  height: 150px;
-  width: 100%;
-  object-fit: contain;
+	height: 150px;
+    width: 150px;
+    padding-left: 40px;
+    padding-bottom: 40%;
+    background-size: cover;
 }
 
 .line{
@@ -221,7 +223,7 @@
 	font-family: 'Open Sans';
 	font-weight: 800;
 	color: #202020;
-	margin: 38% 30% 20% 0;
+	margin: 38% 30% 5% 0;
 }
 .save{
 	padding-top: 5px;

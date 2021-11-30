@@ -110,9 +110,9 @@ export class CartComponent implements OnInit {
     let name2
     let fullName
     for (let i = 0; i < this.items.length; i++) {
-      total += this.items[i].quantity * this.items[i].price
-      tax = total * .15
-      subTotal = total - tax
+      subTotal += this.items[i].quantity * this.items[i].price
+      tax = subTotal * .15
+      total = subTotal + tax
       names = this.names.replace(', ', ' ').split(' ')
       name1 = names[0]
       name2 = names[1]
