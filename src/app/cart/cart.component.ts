@@ -50,39 +50,6 @@ export class CartComponent implements OnInit {
     localStorage.setItem('inventory', JSON.stringify(this.items))
   }
 
-  addItem1() {
-    this.items.push({
-      "name": "Item 1",
-      "image": "../../assets/bike1.jpeg",
-      "description": "Item Model 1",
-      "OZ": 12,
-      "price": 5000,
-      "quantity": 1
-    });
-  }
-
-  addItem2() {
-    this.items.push({
-      "name": "Item 2",
-      "image": "../../assets/bike2.jpeg",
-      "description": "Item Model 2",
-      "OZ": 16,
-      "price": 4000,
-      "quantity": 1
-    });
-  }
-
-  addItem3() {
-    this.items.push({
-      "name": "Item 3",
-      "image": "../../assets/bike3.jpeg",
-      "description": "Item Model 3",
-      "OZ": 20,
-      "price": 3000,
-      "quantity": 1
-    });
-  }
-
   save() {
     localStorage.setItem('inventory', JSON.stringify(this.items))
     this.toastService.showToast('success', 2000, "Successfully saved")
@@ -119,9 +86,9 @@ export class CartComponent implements OnInit {
       fullName = name2 + ' ' + name1
     } return {
       names: fullName,
-      tax: tax,
-      subTotal: subTotal,
-      total: total,
+      tax: Math.round(tax * 100) / 100,
+      subTotal: Math.round(subTotal * 100) / 100,
+      total: Math.round(total * 100) /100,
     }
   }
 
