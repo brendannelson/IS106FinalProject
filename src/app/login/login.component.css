@@ -11,8 +11,9 @@
 }
 .login-logo > img {
   object-fit: cover;
-  width: calc(100% + 50px);
+  /* width: calc(100% + 50px); */
   display: block;
   height: 200px;
-  margin: -25px -25px 25px -25px;
+  /* margin: -25px -25px 25px -25px;  */
+  margin: auto;
 }

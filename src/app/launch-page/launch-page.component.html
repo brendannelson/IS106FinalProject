@@ -5,40 +5,55 @@
   </div> -->
 </nav>
 
+<ul>
+  <li><a href="#">Best Sellers</a></li>
+  <li><a href="#">Sales</a></li>
+  <li><a href="../sixteen-ounce/sixteen-ounce.component.html">16 OZ.</a></li>
+  <li><a href="../eighteen-ounce/eighteen-ounce.component.html">18 OZ.</a></li>
+  <li><a href="../twenty-ounce/twenty-ounce.component.html">20 OZ.</a></li>
+  <li><a href="../thirtytwo-ounce/thirtytwo-ounce.component.html">32 OZ.</a></li>
+  <li><a href="../thirtythree-ounce/thirtythree-ounce.component.html">33 OZ.</a></li>
+  <li><a href="../thirtyfour-ounce/thirtyfour-ounce.component.html">34 OZ.</a></li>
+</ul>
+
 <ul class="nav justify-content-end nav-action-container">
   <li class="nav-item active">
-    <a mat-raised-button color="primary" class="nav-link " [routerLink]="['../cart']"><i class="cart fa fa-shopping-cart"></i>Cart {{ items.length }}  </a>
+    <a mat-raised-button color="primary" class="nav-link " [routerLink]="['../cart']"><i
+        class="cart fa fa-shopping-cart"></i>Cart {{ items.length }} </a>
   </li>
 </ul>
+
 
 <div class="contact-grid">
   <div class="gallery-grid">
     <mat-card class="example-card cell-1">
       <mat-card-content>
-        <img class="cover1" src="../../assets/1.png" >
+        <img class="cover1" src="../../assets/1.png">
         <p>
           <label for="id">Name:</label>
           <input disabled type="text" class="form-control" placeholder="Studio Glass Water Bottle" aria-label="id">
         </p>
         <p>
           <label for="description">Description:</label>
-          <input disabled type="text" class="form-control" placeholder="Drink directly from glass with ZULU Studio. Made of odor-free, stain-free, and clean tasting glass." aria-label="desc"
-            aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control"
+            placeholder="Drink directly from glass with ZULU Studio. Made of odor-free, stain-free, and clean tasting glass."
+            aria-label="desc" aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input disabled type="text" class="form-control" placeholder="28" aria-label="OZ" aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control" placeholder="28" aria-label="OZ"
+            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
           <input disabled type="text" class="form-control" placeholder="$16.99" aria-label="price"
             aria-describedby="basic-addon1">
         </p>
-  
+
       </mat-card-content>
       <mat-card-actions>
         <div class="center">
-          <button  mat-raised-button color="primary" (click)='addItem1()'>Add to Cart</button>
+          <button mat-raised-button color="primary" (click)='addItem1()'>Add to Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
@@ -52,12 +67,14 @@
         </p>
         <p>
           <label for="description">Description:</label>
-          <input disabled type="text" class="form-control" placeholder="Upgrade your daily hydration with the Porter water bottle from W&P." aria-label="desc"
+          <input disabled type="text" class="form-control"
+            placeholder="Upgrade your daily hydration with the Porter water bottle from W&P." aria-label="desc"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input disabled type="text" class="form-control" placeholder="20" aria-label="OZ" aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control" placeholder="20" aria-label="OZ"
+            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
@@ -66,27 +83,29 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <div  class="center">
+        <div class="center">
           <button mat-raised-button color="primary" (click)='addItem2()'>Add to Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
 
-    <mat-card >
+    <mat-card>
       <mat-card-content>
-        <img class="cover" src="../../assets/3.jpg"  >
+        <img class="cover" src="../../assets/3.jpg">
         <p>
-          <label for="id" >Name:</label>
+          <label for="id">Name:</label>
           <input disabled type="text" class="form-control" placeholder="Soma Glass Water Bottle" aria-label="id">
         </p>
         <p>
           <label for="description">Description:</label>
-          <input disabled type="text" class="form-control" placeholder="Stay hydrated in style. Crafted from shatter-resistant glass, and sporting an easy-to-grip sleeve, you’ll want to take this water bottle with you here, there and everywhere." aria-label="desc"
-            aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control"
+            placeholder="Stay hydrated in style. Crafted from shatter-resistant glass, and sporting an easy-to-grip sleeve, you’ll want to take this water bottle with you here, there and everywhere."
+            aria-label="desc" aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input disabled type="text" class="form-control" placeholder="25" aria-label="OZ" aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control" placeholder="25" aria-label="OZ"
+            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
@@ -95,27 +114,30 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <div  class="center">
+        <div class="center">
           <button mat-raised-button color="primary" (click)='addItem3()'>Add to Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
 
-    <mat-card >
+    <mat-card>
       <mat-card-content>
         <img class="cover" src="../../assets/4.jpg">
         <p>
           <label for="id">Name:</label>
-          <input disabled type="text" class="form-control" placeholder="BOROSILICATE GLASS WATER BOTTLE WITH PROTECTIVE NEOPRENE SLEEVE" aria-label="id">
+          <input disabled type="text" class="form-control"
+            placeholder="BOROSILICATE GLASS WATER BOTTLE WITH PROTECTIVE NEOPRENE SLEEVE" aria-label="id">
         </p>
         <p>
           <label for="description">Description:</label>
-          <input disabled type="text" class="form-control" placeholder="Our Faded glass bottles are BPA, BPS, PVC, Lead and Cadmium free." aria-label="desc"
+          <input disabled type="text" class="form-control"
+            placeholder="Our Faded glass bottles are BPA, BPS, PVC, Lead and Cadmium free." aria-label="desc"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input disabled type="text" class="form-control" placeholder="18" aria-label="OZ" aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control" placeholder="18" aria-label="OZ"
+            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
@@ -124,7 +146,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <div  class="center">
+        <div class="center">
           <button mat-raised-button color="primary" (click)='addItem4()'>Add to Cart</button>
         </div>
       </mat-card-actions>
@@ -135,16 +157,19 @@
         <img class="cover" src="../../assets/5.jpg">
         <p>
           <label for="id">Name:</label>
-          <input disabled type="text" class="form-control" placeholder="Floriculture Glass Water Bottle" aria-label="id">
+          <input disabled type="text" class="form-control" placeholder="Floriculture Glass Water Bottle"
+            aria-label="id">
         </p>
         <p>
           <label for="description">Description:</label>
-          <input disabled type="text" class="form-control" placeholder="Includes stainless steel cap & fabric carrying strap." aria-label="desc"
+          <input disabled type="text" class="form-control"
+            placeholder="Includes stainless steel cap & fabric carrying strap." aria-label="desc"
             aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="OZ">OZ</label>
-          <input disabled type="text" class="form-control" placeholder="18.6" aria-label="OZ" aria-describedby="basic-addon1">
+          <input disabled type="text" class="form-control" placeholder="18.6" aria-label="OZ"
+            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="price">Price</label>
@@ -153,12 +178,12 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <div  class="center">
-          <button mat-raised-button color="primary" (click)='addItem5()' >Add to Cart</button>
+        <div class="center">
+          <button mat-raised-button color="primary" (click)='addItem5()'>Add to Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
-    
+
 
   </div>
 </div>

@@ -16,6 +16,12 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { LaunchPageComponent } from './launch-page/launch-page.component';
 import { SalesComponent } from './sales/sales.component';
+import { SixteenOunceComponent } from './sixteen-ounce/sixteen-ounce.component';
+import { EighteenOunceComponent } from './eighteen-ounce/eighteen-ounce.component';
+import { TwentyOunceComponent } from './twenty-ounce/twenty-ounce.component';
+import { ThirtytwoOunceComponent } from './thirtytwo-ounce/thirtytwo-ounce.component';
+import { ThirtythreeOunceComponent } from './thirtythree-ounce/thirtythree-ounce.component';
+import { ThirtyfourOunceComponent } from './thirtyfour-ounce/thirtyfour-ounce.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,13 @@ import { SalesComponent } from './sales/sales.component';
     HomeComponent,
     CartComponent,
     LaunchPageComponent,
-    SalesComponent
+    SalesComponent,
+    SixteenOunceComponent,
+    EighteenOunceComponent,
+    TwentyOunceComponent,
+    ThirtytwoOunceComponent,
+    ThirtythreeOunceComponent,
+    ThirtyfourOunceComponent
   ],
   imports: [
     BrowserModule,
