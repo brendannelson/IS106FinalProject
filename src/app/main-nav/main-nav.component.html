@@ -16,17 +16,35 @@
           <li class="nav-item active">
             <a class="nav-link" [routerLink]="['sales']">Login/My Account<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a class="nav-link" [routerLink]="['invoice']">Cart<span class="sr-only">(current)</span></a>
-          </li>
+          </li> -->
           <!-- <li class="nav-item active">
             <a class="nav-link" [routerLink]="['cart']">Cart <span class="sr-only">(current)</span></a>
           </li> -->
           <!-- <li class="nav-item active">
             <a class="nav-link" (click)="about()">About</a>
           </li> -->
+          
         </ul>
+        
       </div>
+      <ul>
+        <li >
+          <a mat-raised-button color="warn" class="nav-link" [routerLink]="['../cart']"><i
+              class="cart fa fa-shopping-cart"></i> Cart {{items.length}}</a>
+        </li>
+      </ul>
     </nav>
   </mat-toolbar-row>
 </mat-toolbar>
+<ul>
+  <li><a [routerLink]="['launch-page']">Best Sellers</a></li>
+  <li><a [routerLink]="['sales']">Sales</a></li>
+  <li><a [routerLink]="['sixteen']">16 OZ.</a></li>
+  <li><a [routerLink]="['eighteen']">18 OZ.</a></li>
+  <li><a [routerLink]="['twenty']">20 OZ.</a></li>
+  <li><a [routerLink]="['thirtytwo']">32 OZ.</a></li>
+  <li><a [routerLink]="['thirtythree']">33 OZ.</a></li>
+  <li><a [routerLink]="['thirtyfour']">34 OZ.</a></li>
+</ul>
