@@ -1,3 +1,84 @@
-<p>
-  twenty-ounce works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
+  </div> -->
+</nav>
+
+<!-- <div class="topnav">
+  <a href="#">Best Sellers</a>
+  <a href="#">Sales</a>
+  <a href="#">Categories</a>
+</div>  -->
+
+<!-- <ul class="nav justify-content-end nav-action-container">
+  <li class="nav-item active">
+    <a mat-raised-button color="primary" class="nav-link " [routerLink]="['../cart']"><i class="cart fa fa-shopping-cart"></i>Cart {{ items.length }}  </a>
+  </li>
+</ul> -->
+
+
+<div class="contact-grid">
+  <div class="gallery-grid">
+    <mat-card>
+      <mat-card-content>
+        <img class="cover" src="../../assets/8.jpeg">
+        <p>
+          <label for="id">Name:</label>
+          <input disabled type="text" class="form-control" placeholder="Evolve Water Bottle" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input disabled type="text" class="form-control"
+            placeholder="Water bottle with sure-grip and protection sleeve: A protective silicone sleeve is included with the non-toxic, BPA-free 20 oz. Water bottles."
+            aria-label="desc" aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input disabled type="text" class="form-control" placeholder="20" aria-label="OZ"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input disabled type="text" class="form-control" placeholder="$8.97" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="center">
+          <button mat-raised-button color="primary" (click)='addItem8()'>Add to Cart</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-content>
+        <img class="cover" src="../../assets/2.jpg">
+        <p>
+          <label for="id">Name:</label>
+          <input disabled type="text" class="form-control" placeholder="Porter Water Bottle" aria-label="id">
+        </p>
+        <p>
+          <label for="description">Description:</label>
+          <input disabled type="text" class="form-control"
+            placeholder="Upgrade your daily hydration with the Porter water bottle from W&P." aria-label="desc"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="OZ">OZ</label>
+          <input disabled type="text" class="form-control" placeholder="20" aria-label="OZ"
+            aria-describedby="basic-addon1">
+        </p>
+        <p>
+          <label for="price">Price</label>
+          <input disabled type="text" class="form-control" placeholder="$19.99" aria-label="price"
+            aria-describedby="basic-addon1">
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="center">
+          <button mat-raised-button color="primary" (click)='addItem2()'>Add to Cart</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
