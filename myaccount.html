@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelsey Ewing - IS106 Term Group Project</title>
+
+        <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+        h2{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .box-shadow{
+            -webkit-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+            box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+        }
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+        .contact-grid {
+            display: grid;
+            margin: 20px auto;
+            width: 90%;
+            height: 80vh;
+            max-height: 80vh;
+            overflow: auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+        .r1, .r3 {
+            display: grid;
+            background-color: #8d8c8c;
+            padding: 1em;
+            align-self: center;
+            color: #ffffff;
+        }
+        .r3 {
+            text-align: center;
+        }
+        .r2 {
+            height: auto;
+            background-color: #f1f1f1;
+        }
+        .one-column{
+            display: grid;
+            background-color:  #FFF;
+            grid-column-gap: 1em;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        .txt-center{
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid #8d8c8c;
+            padding: 15px;
+        }
+        .left-nav{
+            list-style-type: none;
+        }
+        .left-nav > li > a{
+            display: block;
+            padding: 15px 0px 15px 30px;
+            background-color: #f4f4f4;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 0.7s;
+        }
+        .left-nav > li > a:hover{
+            background-color: #8d8c8c;
+        }
+        .h2-content{
+            grid-column: 1/5;
+            height: 22px;
+            width: 100%;
+        }
+        .contact-form{
+            width: auto;
+            padding: auto;
+            margin: 100px auto;
+            align-self: center;
+        }
+        .contact-input{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .submit-button{
+            padding: 14px 20px;
+            background-color: #04AA6D;
+            float: center;
+            color: #ffffff;
+            width: 50%;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        span.psw {
+            float: center;
+            padding-top: 16px;
+        }
+        .r1 > img {
+            width: auto;
+            height: auto;
+            align-self: left;
+            max-height: 130px;
+        }
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0 -16px;
+            /* display: grid;
+            grid-column-gap: 1em;
+            grid-template-columns: 1fr 1fr; */
+            width: 100%;
+        }
+        .col-50 {
+            -ms-flex: 50%;
+            flex: 50%;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .col-75 {
+            -ms-flex: 75%;
+            flex: 75%;
+
+        }
+
+        .col-50, .col-75 {
+            padding: 0 16px;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        </style>
+
+    </head>
+
+
+    <body class="main-container-grid">
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
+        </div>
+      </nav> -->
+
+      <div class="contact-grid">
+        <div class="gallery-grid">
+          <div class="one-column">
+            <p>Account Information</p>
+            <div class="row">
+              <div class="col-75">
+                <div class="container">
+                  <form action="/action_page.php">
+                    <div class="row">
+                      <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="">
+
+                        <div class="row">
+                          <div class="col-50">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="">
+                          </div>
+                          <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="">
+
+                        <div class="row">
+                          <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="">
+                          </div>
+                          <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+
+                      </div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Use same address for shipping
+                      </label>
+                      <input type="submit" value="Save to Account Information" class="btn">
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- <div class="r3">
+              2021 Copyright of Glass Water Bottle Inc.
+          </div> -->
+        </div>
+      </div>
+    <script type= "text/javascript" src= "./js/myaccount.js"></script>
+    </body>
+</html>
