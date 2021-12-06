@@ -1,0 +1,78 @@
+<body class="main-container-grid">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <input [(ngModel)]='name' class="form-control mr-sm-2" type="search" placeholder="Enter your name (Last, First)" aria-label="Search" name="search">
+    </div>
+  </nav> -->
+
+  <div class="contact-grid">
+    <div class="gallery-grid">
+      <div class="one-column">
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <p>Account Information</p>
+              <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="">
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Use same address for shipping
+                  </label>
+                  <input type="submit" value="Save to Account Information" class="btn">
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="r3">
+          2021 Copyright of Glass Water Bottle Inc.
+      </div> -->
+    </div>
+  </div>
+<script type= "text/javascript" src= "./js/myaccount.js"></script>
+</body>

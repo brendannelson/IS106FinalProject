@@ -22,6 +22,7 @@ import { TwentyOunceComponent } from './twenty-ounce/twenty-ounce.component';
 import { ThirtytwoOunceComponent } from './thirtytwo-ounce/thirtytwo-ounce.component';
 import { ThirtythreeOunceComponent } from './thirtythree-ounce/thirtythree-ounce.component';
 import { ThirtyfourOunceComponent } from './thirtyfour-ounce/thirtyfour-ounce.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ThirtyfourOunceComponent } from './thirtyfour-ounce/thirtyfour-ounce.co
     TwentyOunceComponent,
     ThirtytwoOunceComponent,
     ThirtythreeOunceComponent,
-    ThirtyfourOunceComponent
+    ThirtyfourOunceComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,

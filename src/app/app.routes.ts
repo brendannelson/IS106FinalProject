@@ -10,6 +10,7 @@ import { TwentyOunceComponent } from './twenty-ounce/twenty-ounce.component';
 import { ThirtytwoOunceComponent } from './thirtytwo-ounce/thirtytwo-ounce.component';
 import { ThirtythreeOunceComponent } from './thirtythree-ounce/thirtythree-ounce.component';
 import { ThirtyfourOunceComponent } from './thirtyfour-ounce/thirtyfour-ounce.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 const appRoutes: Routes = [
   {
@@ -52,7 +53,10 @@ const appRoutes: Routes = [
   {
     path: 'thirtyfour',
     component: ThirtyfourOunceComponent
-  },
+  }, {
+    path: 'myaccount',
+    component: MyAccountComponent
+  }
   
 ];
 
