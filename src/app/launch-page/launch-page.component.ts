@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
+import {Output,EventEmitter} from '@angular/core'
 
 
 export interface Items {
@@ -42,7 +43,6 @@ export class LaunchPageComponent implements OnInit {
     this.items = items;
     return items;
   }
-
 
   remove(index: number) {
     this.items.splice(index, 1);
