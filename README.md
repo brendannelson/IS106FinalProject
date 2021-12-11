@@ -1,4 +1,3 @@
-# Specialty Bike Application
 
 ## Development server
 
